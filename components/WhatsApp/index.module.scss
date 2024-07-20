@@ -1,0 +1,9 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.whatsAppBtn {
+  position: fixed;
+  left: 88vw;
+  bottom: 10px;
+  @include btn-class;
+}

@@ -1,0 +1,238 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.headingSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 125px;
+
+  @include mobile {
+    padding: 0 20px;
+    margin-top: 95px;
+  }
+
+  .heading {
+    color: #8c6542;
+    font-family: Platform;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    width: 90%;
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+
+  .subHeading {
+    color: #8c6542;
+    font-size: 28px;
+    line-height: 34px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: -0.56px;
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}
+
+.imageSection {
+  .btnContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    .downloadBtn {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      @include btn-class;
+      color: #22401e;
+      text-align: right;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.4px;
+    }
+
+    @include mobile {
+      justify-content: flex-start;
+      padding: 0 20px;
+      .downloadBtn {
+        font-size: 12px;
+        gap: 2px;
+      }
+    }
+  }
+
+  .bgImage {
+    background-image: url("../../assets/images/Elixir_7-5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    max-width: 1200px;
+    max-height: 980px;
+
+    @include mobile {
+      width: 100vw;
+      height: 359px;
+    }
+  }
+}
+
+.imageSection1 {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  min-width: 1200px;
+  margin-top: 56px;
+
+  @include mobile {
+    min-width: 390px;
+    margin-top: 30px;
+  }
+
+  .bgImage1 {
+    background-image: url("../../assets/images/ElixirAmneties.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    min-width: 1200px;
+    max-height: 980px;
+
+    @include mobile {
+      min-width: 414px;
+      max-height: 359px;
+    }
+  }
+
+  .bgImage2 {
+    background-image: url("../../assets/images/Elixir_clubhouse-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    min-width: 1200px;
+    max-height: 980px;
+    @include mobile {
+      min-width: 414px;
+      max-height: 359px;
+    }
+  }
+
+  .bgImage3 {
+    background-image: url("../../assets/images/Elixir_clubhouse-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    min-width: 1200px;
+    max-height: 980px;
+    @include mobile {
+      min-width: 414px;
+      max-height: 359px;
+    }
+  }
+
+  .bgImage4 {
+    background-image: url("../../assets/images/Elixir_clubhouse-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    min-width: 1200px;
+    max-height: 980px;
+    @include mobile {
+      min-width: 414px;
+      max-height: 359px;
+    }
+  }
+}
+
+.cardsSection {
+  display: flex;
+  min-height: 80vh;
+  background-color: #7a8c51;
+  padding: 50px;
+  margin-top: 50px;
+  gap: 40px;
+
+  @include mobile {
+    padding: 20px;
+  }
+
+  .heading {
+    color: #fff;
+    text-align: justify;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+    width: 200px;
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @include mobile {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      border-radius: 16px;
+      background: rgba(34, 64, 30, 0.5);
+      width: 275px;
+      height: 313px;
+
+      img {
+        max-width: 110px;
+        max-height: 80px;
+      }
+
+      @include mobile {
+        width: 170px;
+        height: 190px;
+        gap: 20px;
+
+        img {
+          max-width: 110px;
+          max-height: 80px;
+        }
+      }
+
+      .text {
+        color: #fcfbfa;
+        text-align: center;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

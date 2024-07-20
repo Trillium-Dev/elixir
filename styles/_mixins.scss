@@ -1,0 +1,68 @@
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-width-lg: 1500px;
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (min-width: #{$desktop-width-lg}) {
+    @content;
+  }
+}
+
+@mixin mounting-animation {
+  opacity: 0;
+  animation: mount ease-in-out 300ms forwards;
+
+  @keyframes mount {
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin demounting-animation {
+  opacity: 1;
+  animation: demount ease-out 300ms backwards;
+
+  @keyframes demount {
+    100% {
+      opacity: 0;
+    }
+  }
+}
+@mixin display-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin display-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btn-class {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

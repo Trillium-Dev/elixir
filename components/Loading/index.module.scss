@@ -1,0 +1,31 @@
+@import "styles/colors.scss";
+@import "styles/mixins.scss";
+
+.container {
+  @include display-column-center;
+  gap: 24px;
+  width: 100%;
+  height: 100%;
+
+  .dsrLogo {
+    background-image: url("../../assets/images/DSR.png");
+    background-repeat: no-repeat;
+    width: 164px;
+    height: 48px;
+  }
+
+  .backgroundLogo {
+    background-image: url("../../assets/images/Elixir_1\ 1.png");
+    background-repeat: no-repeat;
+    width: 296px;
+    height: 296px;
+    border-radius: 50%;
+  }
+
+  .elixirLogo {
+    background-image: url("../../assets/images/Elixir-Logo-1.png");
+    background-repeat: no-repeat;
+    width: 292px;
+    height: 96px;
+  }
+}

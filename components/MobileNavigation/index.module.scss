@@ -1,0 +1,172 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.container {
+  position: fixed;
+  bottom: 5px;
+  width: 360px;
+  left: 50%;
+  margin-left: -180px;
+  height: 40px;
+  z-index: 100;
+  background: linear-gradient(
+    91deg,
+    rgba(122, 140, 81, 0.6) 1.1%,
+    rgba(122, 140, 81, 0.08) 100%
+  );
+  background-image: url("../../assets/images/MobileDock.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(27.5px);
+
+  color: #1d1d1f;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+
+  .mailContainer {
+    position: relative;
+    top: 5px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #22401e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .exploreText {
+    position: relative;
+    top: 24px;
+    left: -5px;
+  }
+
+  .whatsAppContainer {
+    position: relative;
+    top: 5px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle {
+    &_1 {
+      position: absolute;
+      left: 100px;
+      bottom: 48px;
+      @include display-row-center;
+      background-color: #22401e;
+      box-shadow: 0px 4px 4px rgba(34, 64, 30, 0.2);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      @include mounting-animation;
+
+      &.close {
+        display: none;
+        @include demounting-animation;
+      }
+    }
+
+    &_2 {
+      position: absolute;
+      left: 122px;
+      bottom: 100px;
+      @include display-row-center;
+      background-color: #22401e;
+      box-shadow: 0px 4px 4px rgba(34, 64, 30, 0.2);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      @include mounting-animation;
+
+      &.close {
+        display: none;
+        @include demounting-animation;
+      }
+    }
+
+    &_3 {
+      position: absolute;
+      right: 122px;
+      bottom: 100px;
+      @include display-row-center;
+      background-color: #22401e;
+      box-shadow: 0px 4px 4px rgba(34, 64, 30, 0.2);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      @include mounting-animation;
+
+      &.close {
+        display: none;
+        @include demounting-animation;
+      }
+    }
+
+    &_4 {
+      position: absolute;
+      right: 100px;
+      bottom: 48px;
+      @include display-row-center;
+      background-color: #22401e;
+      box-shadow: 0px 4px 4px rgba(34, 64, 30, 0.2);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      @include mounting-animation;
+
+      &.close {
+        display: none;
+        @include demounting-animation;
+      }
+    }
+  }
+}
+
+.text {
+  color: #f2efeb;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.enquireBtn {
+  @include btn-class;
+}

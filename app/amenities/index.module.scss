@@ -1,5 +1,5 @@
-@import "styles/colors";
-@import "styles/mixins";
+@import 'styles/colors';
+@import 'styles/mixins';
 
 .headingSection {
   display: flex;
@@ -72,7 +72,7 @@
   }
 
   .bgImage {
-    background-image: url("../../assets/images/Elixir_7-5.png");
+    background-image: url('../../assets/images/Elixir_7-5.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 90vw;
@@ -101,7 +101,7 @@
   }
 
   .bgImage1 {
-    background-image: url("../../assets/images/ElixirAmneties.png");
+    background-image: url('../../assets/images/ElixirAmneties.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 90vw;
@@ -116,7 +116,7 @@
   }
 
   .bgImage2 {
-    background-image: url("../../assets/images/Elixir_clubhouse-1.png");
+    background-image: url('../../assets/images/Elixir_clubhouse-1.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 90vw;
@@ -130,7 +130,7 @@
   }
 
   .bgImage3 {
-    background-image: url("../../assets/images/Elixir_clubhouse-2.png");
+    background-image: url('../../assets/images/Elixir_clubhouse-2.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 90vw;
@@ -144,7 +144,7 @@
   }
 
   .bgImage4 {
-    background-image: url("../../assets/images/Elixir_clubhouse-3.png");
+    background-image: url('../../assets/images/Elixir_clubhouse-3.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 90vw;

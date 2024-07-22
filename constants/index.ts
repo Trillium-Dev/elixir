@@ -458,22 +458,22 @@ export const VillasPages = (type: string) => {
 
 export const EastFacingVllas = [
   {
-    text: "1200 sqft",
+    text: "2705 sqft",
     id: "E1200",
     image: EastFacing1200,
   },
   {
-    text: "1500 sqft",
+    text: "3376 sqft",
     id: "E1500",
     image: EastFacing1500,
   },
   {
-    text: "2105 sqft",
+    text: "4615 sqft",
     id: "E2105",
     image: EastFacing2105,
   },
   {
-    text: "2400 sqft",
+    text: "5418 sqft",
     id: "E2400",
     image: EastFacing2400,
   },
@@ -481,22 +481,22 @@ export const EastFacingVllas = [
 
 export const WestFacingVillas = [
   {
-    text: "1200 sqft",
+    text: "2688 sqft",
     id: "W1200",
     image: WestFacing1200,
   },
   {
-    text: "1500 sqft",
+    text: "3375 sqft",
     id: "W1500",
     image: WestFacing1500,
   },
   {
-    text: "2105 sqft",
+    text: "4583 sqft",
     id: "W2105",
     image: WestFacing2105,
   },
   {
-    text: "2400 sqft",
+    text: "5431 sqft",
     id: "W2400",
     image: WestFacing2400,
   },

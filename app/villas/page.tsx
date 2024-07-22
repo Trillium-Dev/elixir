@@ -12,6 +12,7 @@ import MobileNavigation from "components/MobileNavigation";
 import { EastFacingVllas, WestFacingVillas } from "../../constants";
 import Link from "next/link";
 import cn from "classnames";
+import RCarousel from "@/components/RCarousel";
 
 const Villas = () => {
   const router = useRouter();
@@ -80,7 +81,7 @@ const Villas = () => {
         />
       </video> */}
       <div className={styles.header}>EAST FACING VILLAS</div>
-      <div className={styles.slidesContainer}>
+      <RCarousel>
         {EastFacingVllas?.map((villa) => (
           <div
             className={styles.slide}
@@ -108,10 +109,11 @@ const Villas = () => {
             </div>
           </div>
         ))}
-      </div>
+      </RCarousel>
       <div className={styles.container}>
         <div className={styles.headerWest}>WEST FACING VILLAS</div>
-        <div className={styles.slidesContainer}>
+        {/* <div className={styles.slidesContainer}> */}
+        <RCarousel>
           {WestFacingVillas?.map((villa) => (
             <div
               className={styles.slide}
@@ -139,7 +141,8 @@ const Villas = () => {
               </div>
             </div>
           ))}
-        </div>
+        </RCarousel>
+        {/* </div> */}
       </div>
       <div className={styles.headingSection}>
         <div className={styles.heading}>Masterplan</div>

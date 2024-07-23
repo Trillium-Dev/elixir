@@ -112,6 +112,10 @@ export const mobileHeaderTabs = [
 
 export const FooterInfo = [
   {
+    title: "RERA NUMBER",
+    value: "PRM/KA/RERA/1251/446/PR/210219/003912",
+  },
+  {
     title: "PROJECT ADDRESS",
     value:
       "Sy. no. 64/1, 64/2, 65/1, 65/2, 65/3, 65/4, 69/3, 70/1 and Sy. no. 70/2 of Bidare Agrahara village Bidarahalli Hobli, BETQ, Bangalore.",
@@ -124,7 +128,7 @@ export const FooterInfo = [
   {
     title: "CONTACT US ON",
     value: "sales@dsrinfra.com",
-    number: "(+91) 99455 36006",
+    number: "(+91) 99641 92000",
   },
 ];
 

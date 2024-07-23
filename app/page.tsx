@@ -11,10 +11,10 @@ import RightIcon from "assets/icons/RightArrow.svg";
 import HomeIcon from "assets/icons/house.svg";
 import TrainIcon from "assets/icons/TrainIcon.svg";
 import cn from "classnames";
-import PlusIcon from "assets/icons/Plus-white.svg";
-import MinusIcon from "assets/icons/minus.svg";
 import { useRouter } from "next/navigation";
 import WhatsApp from "../components/WhatsApp";
+import RCarousel from "@/components/RCarousel";
+import { HeroImg } from "@/constants";
 
 const HomePage = () => {
   const router = useRouter();
@@ -82,17 +82,28 @@ const HomePage = () => {
           </button>
         </div>
       )}
-
-      <div className={styles.imagesSection}>
-        <div className={styles.leftImageContainer}>
-          <div className={styles.first} />
-          <div className={styles.second} />
-          <div className={styles.third} />
-          <div className={styles.fourth} />
-          <div className={styles.fifth} />
-        </div>
-      </div>
-
+      <section className={styles.heroSection}>
+        <RCarousel type='hero'>
+          {HeroImg.map((item, ind) => {
+            return (
+              <article style={{ padding: "0 0.5rem" }}>
+                <div
+                  style={{
+                    backgroundImage: `url(${item.image.src})`,
+                    height: "600px",
+                    width: "800px",
+                    maxWidth: "100%",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                  }}
+                  key={ind}
+                ></div>
+              </article>
+            );
+          })}
+        </RCarousel>
+      </section>
       {(screenWidth as number) < 767 ? (
         <div className={styles.rightImageContainer}>
           <div className={styles.rightImage}></div>
@@ -143,20 +154,10 @@ const HomePage = () => {
               className={cn(styles["villas_1"], {
                 [styles.showImage]: showEastFacing,
               })}
+              style={{ position: "relative" }}
               onMouseEnter={handleHoverEventEastFacing}
               onMouseLeave={handleHoverEventEastFacing}
             >
-              {/* <button
-                type="button"
-                className={styles.plusBtn}
-                onClick={() => setShowEastFacing((prev) => !prev)}
-              >
-                {showEastFacing ? (
-                  <Image src={MinusIcon} alt="" width={10} height={10} />
-                ) : (
-                  <Image src={PlusIcon} alt="" width={16} height={16} />
-                )}
-              </button> */}
               {showEastFacing && (
                 <div className={styles["villas_1_para"]}>
                   Indulge in the epitome of luxury with our 3+BHK villas,
@@ -171,20 +172,10 @@ const HomePage = () => {
               className={cn(styles["villas_2"], {
                 [styles.showImage]: showWestFacing,
               })}
+              style={{ position: "relative" }}
               onMouseEnter={handleHoverEventWestFacing}
               onMouseLeave={handleHoverEventWestFacing}
             >
-              {/* <button
-                type="button"
-                className={styles.plusBtn}
-                onClick={() => setShowWestFacing((prev) => !prev)}
-              >
-                {showWestFacing ? (
-                  <Image src={MinusIcon} alt="" width={10} height={10} />
-                ) : (
-                  <Image src={PlusIcon} alt="" width={16} height={16} />
-                )}
-              </button> */}
               {showWestFacing && (
                 <div className={styles["villas_2_para"]}>
                   Uncover the essence of luxury in our 4+BHK villas, offering

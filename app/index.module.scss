@@ -49,6 +49,7 @@
 .gallaryCTA {
   display: flex;
   justify-content: flex-end;
+
   .galaryBtn {
     @include btn-class;
     color: #22401e;
@@ -59,6 +60,7 @@
     letter-spacing: -0.4px;
   }
 }
+
 
 .imagesSection {
   display: flex;
@@ -77,6 +79,7 @@
     @include mobile {
       gap: 7px;
     }
+
     .first {
       background-image: url("../assets/images/home-image-1.png");
       background-position: center;
@@ -117,6 +120,7 @@
       height: 600px;
       background-repeat: no-repeat;
       background-size: cover;
+
       @include mobile {
         width: 414px;
         min-width: 414px;
@@ -132,12 +136,14 @@
       height: 600px;
       background-repeat: no-repeat;
       background-size: cover;
+
       @include mobile {
         width: 414px;
         min-width: 414px;
         height: 359px;
       }
     }
+
     .fifth {
       background-image: url("../assets/images/ELIXIR-RENDER-4.png");
       background-position: center;
@@ -146,6 +152,7 @@
       height: 600px;
       background-repeat: no-repeat;
       background-size: cover;
+
       @include mobile {
         width: 414px;
         min-width: 414px;
@@ -182,6 +189,7 @@
 .rightImageContainer {
   display: flex;
   gap: 10px;
+
   .rightImage {
     background-image: url("../assets/images/elixir-home.png");
     background-position: center;
@@ -233,6 +241,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
   .heading {
     color: #8c6542;
     font-family: Platform;
@@ -255,12 +264,14 @@
       flex-direction: column-reverse;
       gap: 20px;
     }
+
     &_1 {
       flex: 1;
       display: flex;
       flex-direction: column;
       gap: 40px;
       max-width: 500px;
+
       &_text {
         color: #8c6542;
         font-size: 28px;
@@ -282,6 +293,7 @@
         font-weight: 400;
         line-height: 34px;
         letter-spacing: -0.56px;
+
         @include mobile {
           font-size: 24px;
           padding: 0 20px;
@@ -302,6 +314,7 @@
         line-height: 24px;
         width: fit-content;
         padding: 15px 55px;
+
         @include mobile {
           margin-left: 20px;
         }
@@ -346,6 +359,7 @@
             width: 34px;
             height: 34px;
             background-color: #7a8c51;
+
             @include mobile {
               width: 20px;
               height: 20px;
@@ -363,6 +377,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
+            right: 0;
             padding: 16px 10px;
             color: #fcfbfa;
             font-size: 20px;
@@ -370,16 +385,15 @@
             font-weight: 500;
             line-height: 20px;
             letter-spacing: 0.4px;
-            width: 380px;
+            // width: 380px;
             max-height: 40px;
-            background: linear-gradient(
-              182deg,
-              rgba(29, 29, 31, 0) -13.93%,
-              #1d1d1f 92.75%
-            );
+            background: linear-gradient(182deg,
+                rgba(29, 29, 31, 0) -13.93%,
+                #1d1d1f 92.75%);
+
             @include mobile {
               font-size: 14px;
-              width: 240px;
+              // width: 240px;
             }
           }
 
@@ -423,6 +437,7 @@
             width: 34px;
             height: 34px;
             background-color: #7a8c51;
+
             @include mobile {
               width: 20px;
               height: 20px;
@@ -447,16 +462,16 @@
             font-weight: 500;
             line-height: 20px;
             letter-spacing: 0.4px;
-            width: 399px;
+            // width: 399px;
+            right: 0;
             max-height: 40px;
-            background: linear-gradient(
-              182deg,
-              rgba(29, 29, 31, 0) -13.93%,
-              #1d1d1f 92.75%
-            );
+            background: linear-gradient(182deg,
+                rgba(29, 29, 31, 0) -13.93%,
+                #1d1d1f 92.75%);
+
             @include mobile {
               font-size: 14px;
-              width: 240px;
+              // width: 240px;
             }
           }
 
@@ -555,6 +570,7 @@
   @include mobile {
     gap: 20px;
   }
+
   .text {
     display: flex;
     flex-direction: column;
@@ -563,6 +579,7 @@
     @include mobile {
       gap: 10px;
     }
+
     .amnetiesHeader {
       color: #8c6542;
       font-family: Platform;
@@ -620,6 +637,7 @@
 
   @include mobile {
     height: 500px;
+
     &_1 {
       width: 50%;
       flex: none !important;
@@ -641,6 +659,7 @@
     flex: 1;
     gap: 20px;
     background-color: #7a8c51;
+
     @include mobile {
       gap: 20px;
     }
@@ -678,11 +697,10 @@
       line-height: 20px;
       gap: 3px;
     }
-    &_1 {
-    }
 
-    &_2 {
-    }
+    &_1 {}
+
+    &_2 {}
   }
 }
 
@@ -708,6 +726,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
+
     &::before {
       content: "";
       position: absolute;
@@ -715,12 +734,11 @@
       left: 0;
       width: 100%;
       height: 60px;
-      background: linear-gradient(
-        170deg,
-        rgba(29, 29, 31, 0) 7.56%,
-        #1d1d1f 90%
-      );
+      background: linear-gradient(170deg,
+          rgba(29, 29, 31, 0) 7.56%,
+          #1d1d1f 90%);
     }
+
     @include mobile {
       min-width: 33vw;
       background-image: url("../public/images/Elixir_1_mobile.png");
@@ -736,6 +754,7 @@
     background-position: center;
     background-size: cover;
     flex: 1;
+
     &::before {
       content: "";
       position: absolute;
@@ -743,12 +762,11 @@
       left: 0;
       width: 100%;
       height: 60px;
-      background: linear-gradient(
-        170deg,
-        rgba(29, 29, 31, 0) 7.56%,
-        #1d1d1f 90%
-      );
+      background: linear-gradient(170deg,
+          rgba(29, 29, 31, 0) 7.56%,
+          #1d1d1f 90%);
     }
+
     @include mobile {
       min-width: 33vw;
       background-image: url("../public/images/Elixir_3_mobile.png");
@@ -762,6 +780,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
+
     &::before {
       content: "";
       position: absolute;
@@ -769,11 +788,9 @@
       left: 0;
       width: 100%;
       height: 60px;
-      background: linear-gradient(
-        170deg,
-        rgba(29, 29, 31, 0) 7.56%,
-        #1d1d1f 90%
-      );
+      background: linear-gradient(170deg,
+          rgba(29, 29, 31, 0) 7.56%,
+          #1d1d1f 90%);
     }
 
     @include mobile {
@@ -792,6 +809,7 @@
     font-weight: 300;
     line-height: 20px;
     letter-spacing: 0.96px;
+
     @include mobile {
       font-size: 12px;
       left: 5px;

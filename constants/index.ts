@@ -82,6 +82,19 @@ import WestFacing1500 from "../assets/images/villaImages/west-facing-1500.png";
 import WestFacing2105 from "../assets/images/villaImages/west-facing-2105.png";
 import WestFacing2400 from "../assets/images/villaImages/west-facing-2400.png";
 
+// Hero section
+import First from "../assets/images/home-image-1.png";
+import Second from "../assets/images/ELIXIR-RENDER-1.png";
+import Third from "../assets/images/ELIXIR-RENDER-2.png";
+import Fourth from "../assets/images/ELIXIR-RENDER-3.png";
+import Fifth from "../assets/images/ELIXIR-RENDER-4.png";
+
+// Ameneties
+import ABg1 from "../assets/images/ElixirAmneties.jpg";
+import ABg2 from "../assets/images/Elixir_clubhouse-1.png";
+import ABg3 from "../assets/images/Elixir_clubhouse-2.png";
+import ABg4 from "../assets/images/Elixir_clubhouse-3.png";
+
 export const MOBILE_NUMBER = "+91 99455 36006";
 export const MESSAGE = "Hey";
 
@@ -93,6 +106,46 @@ export const HeaderTabs = [
   { name: "Location", url: "/#location" },
 ];
 
+export const HeroImg = [
+  {
+    id: 1,
+    image: First
+  },
+  {
+    id: 2,
+    image: Second
+  },
+  {
+    id: 3,
+    image: Third
+  },
+  {
+    id: 4,
+    image: Fourth
+  },
+  {
+    id: 5,
+    image: Fifth
+  },
+]
+export const AmenetiesImg = [
+  {
+    id: 1,
+    image: ABg1
+  },
+  {
+    id: 2,
+    image: ABg2
+  },
+  {
+    id: 3,
+    image: ABg3
+  },
+  {
+    id: 4,
+    image: ABg4
+  }
+]
 export const mobileHeaderTabs = [
   { name: "Villas", url: "/villas", icon: VillasIcon },
   { name: "Amenities", url: "/amenities", icon: AmenitiesIcon },
@@ -462,22 +515,22 @@ export const VillasPages = (type: string) => {
 
 export const EastFacingVllas = [
   {
-    text: "1200 sqft",
+    text: "2705 sqft",
     id: "E1200",
     image: EastFacing1200,
   },
   {
-    text: "1500 sqft",
+    text: "3376 sqft",
     id: "E1500",
     image: EastFacing1500,
   },
   {
-    text: "2105 sqft",
+    text: "4615 sqft",
     id: "E2105",
     image: EastFacing2105,
   },
   {
-    text: "2400 sqft",
+    text: "5418 sqft",
     id: "E2400",
     image: EastFacing2400,
   },
@@ -485,22 +538,22 @@ export const EastFacingVllas = [
 
 export const WestFacingVillas = [
   {
-    text: "1200 sqft",
+    text: "2688 sqft",
     id: "W1200",
     image: WestFacing1200,
   },
   {
-    text: "1500 sqft",
+    text: "3375 sqft",
     id: "W1500",
     image: WestFacing1500,
   },
   {
-    text: "2105 sqft",
+    text: "4583 sqft",
     id: "W2105",
     image: WestFacing2105,
   },
   {
-    text: "2400 sqft",
+    text: "5431 sqft",
     id: "W2400",
     image: WestFacing2400,
   },

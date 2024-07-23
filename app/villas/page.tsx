@@ -81,7 +81,7 @@ const Villas = () => {
         />
       </video> */}
       <div className={styles.header}>EAST FACING VILLAS</div>
-      <RCarousel>
+      <RCarousel type="villas">
         {EastFacingVllas?.map((villa) => (
           <div
             className={styles.slide}
@@ -113,7 +113,7 @@ const Villas = () => {
       <div className={styles.container}>
         <div className={styles.headerWest}>WEST FACING VILLAS</div>
         {/* <div className={styles.slidesContainer}> */}
-        <RCarousel>
+        <RCarousel type="villas">
           {WestFacingVillas?.map((villa) => (
             <div
               className={styles.slide}

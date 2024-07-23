@@ -64,6 +64,7 @@
     @include mobile {
       justify-content: flex-start;
       padding: 0 20px;
+
       .downloadBtn {
         font-size: 12px;
         gap: 2px;
@@ -88,73 +89,16 @@
 }
 
 .imageSection1 {
-  display: flex;
-  gap: 20px;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  height: 100vh;
   min-width: 1200px;
-  margin-top: 56px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @include mobile {
-    min-width: 390px;
-    margin-top: 30px;
-  }
-
-  .bgImage1 {
-    background-image: url('../../assets/images/ElixirAmneties.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90vw;
-    height: 100vh;
-    min-width: 1200px;
-    max-height: 980px;
-
-    @include mobile {
-      min-width: 414px;
-      max-height: 359px;
-    }
-  }
-
-  .bgImage2 {
-    background-image: url('../../assets/images/Elixir_clubhouse-1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90vw;
-    height: 100vh;
-    min-width: 1200px;
-    max-height: 980px;
-    @include mobile {
-      min-width: 414px;
-      max-height: 359px;
-    }
-  }
-
-  .bgImage3 {
-    background-image: url('../../assets/images/Elixir_clubhouse-2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90vw;
-    height: 100vh;
-    min-width: 1200px;
-    max-height: 980px;
-    @include mobile {
-      min-width: 414px;
-      max-height: 359px;
-    }
-  }
-
-  .bgImage4 {
-    background-image: url('../../assets/images/Elixir_clubhouse-3.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90vw;
-    height: 100vh;
-    min-width: 1200px;
-    max-height: 980px;
-    @include mobile {
-      min-width: 414px;
-      max-height: 359px;
-    }
+    min-width: 414px;
+    max-height: 359px;
   }
 }
 
@@ -179,6 +123,7 @@
     line-height: 60px;
     letter-spacing: -0.96px;
     width: 200px;
+
     @include mobile {
       display: none;
     }

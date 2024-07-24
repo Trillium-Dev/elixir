@@ -11,8 +11,6 @@ import RightIcon from "assets/icons/RightArrow.svg";
 import HomeIcon from "assets/icons/house.svg";
 import TrainIcon from "assets/icons/TrainIcon.svg";
 import cn from "classnames";
-import PlusIcon from "assets/icons/Plus-white.svg";
-import MinusIcon from "assets/icons/minus.svg";
 import { useRouter } from "next/navigation";
 import WhatsApp from "../components/WhatsApp";
 import RCarousel from "@/components/RCarousel";
@@ -101,9 +99,6 @@ const HomePage = () => {
           })}
         </RCarousel>
       </section>
-      {/* <div className={styles.imagesSection}>
-      </div> */}
-
       {(screenWidth as number) < 767 ? (
         <div className={styles.rightImageContainer}>
           <div className={styles.rightImage}></div>
@@ -158,17 +153,6 @@ const HomePage = () => {
               onMouseEnter={handleHoverEventEastFacing}
               onMouseLeave={handleHoverEventEastFacing}
             >
-              {/* <button
-                type="button"
-                className={styles.plusBtn}
-                onClick={() => setShowEastFacing((prev) => !prev)}
-              >
-                {showEastFacing ? (
-                  <Image src={MinusIcon} alt="" width={10} height={10} />
-                ) : (
-                  <Image src={PlusIcon} alt="" width={16} height={16} />
-                )}
-              </button> */}
               {showEastFacing && (
                 <div className={styles["villas_1_para"]}>
                   Indulge in the epitome of luxury with our 3+BHK villas,
@@ -187,17 +171,6 @@ const HomePage = () => {
               onMouseEnter={handleHoverEventWestFacing}
               onMouseLeave={handleHoverEventWestFacing}
             >
-              {/* <button
-                type="button"
-                className={styles.plusBtn}
-                onClick={() => setShowWestFacing((prev) => !prev)}
-              >
-                {showWestFacing ? (
-                  <Image src={MinusIcon} alt="" width={10} height={10} />
-                ) : (
-                  <Image src={PlusIcon} alt="" width={16} height={16} />
-                )}
-              </button> */}
               {showWestFacing && (
                 <div className={styles["villas_2_para"]}>
                   Uncover the essence of luxury in our 4+BHK villas, offering
@@ -213,9 +186,9 @@ const HomePage = () => {
       <div className={styles.middleSection}>
         <div className={styles["middleSection_1"]}>
           {(screenWidth as number) > 767 ? (
-            <Image src={TrainIcon} alt="" />
+            <Image src={TrainIcon} alt="" width={150} height={180} />
           ) : (
-            <Image src={TrainIcon} alt="" width={75} height={88} />
+            <Image src={TrainIcon} alt="" width={58} height={62} />
           )}
 
           <div className={styles.textSection}>
@@ -227,9 +200,9 @@ const HomePage = () => {
         </div>
         <div className={styles["middleSection_2"]}>
           {(screenWidth as number) > 767 ? (
-            <Image src={HomeIcon} alt="" width={279} height={275} />
+            <Image src={HomeIcon} alt="" width={170} height={200} />
           ) : (
-            <Image src={HomeIcon} alt="" width={83} height={89} />
+            <Image src={HomeIcon} alt="" width={65} height={70} />
           )}
 
           <div className={styles.textSection}>

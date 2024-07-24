@@ -47,73 +47,73 @@ const Gallary = () => {
       <div className={styles.heading}>
         <div className={styles.text}>PROJECT RENDERS</div>
         <button
-          type='button'
+          type="button"
           className={styles.crossBtn}
           onClick={() => router.back()}
         >
-          <Image src={CrossIcon} width={36} height={36} alt='' />
+          <Image src={CrossIcon} width={36} height={36} alt="" />
         </button>
       </div>
       <div className={styles.imagesContainer}>
         {(screenWidth as number) < 767 ? (
-          <Image src={Image1} alt='' width={380} height={283} />
+          <Image src={Image1} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image1} alt='' width={411} height={306} />
+          <Image src={Image1} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image2} alt='' width={380} height={283} />
+          <Image src={Image2} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image2} alt='' width={411} height={306} />
+          <Image src={Image2} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image3} alt='' width={380} height={283} />
+          <Image src={Image3} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image3} alt='' width={411} height={306} />
+          <Image src={Image3} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image4} alt='' width={380} height={283} />
+          <Image src={Image4} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image4} alt='' width={411} height={306} />
+          <Image src={Image4} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image5} alt='' width={380} height={283} />
+          <Image src={Image5} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image5} alt='' width={411} height={306} />
+          <Image src={Image5} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image6} alt='' width={380} height={283} />
+          <Image src={Image6} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image6} alt='' width={411} height={306} />
+          <Image src={Image6} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image7} alt='' width={380} height={283} />
+          <Image src={Image7} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image7} alt='' width={411} height={306} />
+          <Image src={Image7} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image8} alt='' width={380} height={283} />
+          <Image src={Image8} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image8} alt='' width={411} height={306} />
+          <Image src={Image8} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image9} alt='' width={380} height={283} />
+          <Image src={Image9} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image9} alt='' width={411} height={306} />
+          <Image src={Image9} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image10} alt='' width={380} height={283} />
+          <Image src={Image10} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image10} alt='' width={411} height={306} />
+          <Image src={Image10} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image11} alt='' width={380} height={283} />
+          <Image src={Image11} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image11} alt='' width={411} height={306} />
+          <Image src={Image11} alt="" width={411} height={306} />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image12} alt='' width={380} height={283} />
+          <Image src={Image12} alt="" width={380} height={283} />
         ) : (
-          <Image src={Image12} alt='' width={411} height={306} />
+          <Image src={Image12} alt="" width={411} height={306} />
         )}
       </div>
     </div>

@@ -72,18 +72,18 @@ const HomePage = () => {
       {!((screenWidth as number) < 767) && (
         <div className={styles.gallaryCTA}>
           <button
-            type='button'
+            type="button"
             className={styles.galaryBtn}
             onClick={handleGallaryClick}
           >
             GALLERY
-            <Image src={PlayIcon} width={6} height={10} alt='' />
-            <Image src={PlayIcon} width={6} height={10} alt='' />
+            <Image src={PlayIcon} width={6} height={10} alt="" />
+            <Image src={PlayIcon} width={6} height={10} alt="" />
           </button>
         </div>
       )}
       <section className={styles.heroSection}>
-        <RCarousel type='hero'>
+        <RCarousel type="hero">
           {HeroImg.map((item, ind) => {
             return (
               <article style={{ padding: "0 0.5rem" }}>
@@ -113,13 +113,13 @@ const HomePage = () => {
               Whitefield.
             </div>
             <button
-              type='button'
+              type="button"
               className={styles.galaryBtn}
               onClick={handleGallaryClick}
             >
               GALLERY
-              <Image src={PlayIcon} width={6} height={10} alt='' />
-              <Image src={PlayIcon} width={6} height={10} alt='' />
+              <Image src={PlayIcon} width={6} height={10} alt="" />
+              <Image src={PlayIcon} width={6} height={10} alt="" />
             </button>
           </div>
         </div>
@@ -141,12 +141,12 @@ const HomePage = () => {
               Ready to experience the extraordinary?
             </div>
             <button
-              type='button'
+              type="button"
               className={styles["explore_villas_btn"]}
               onClick={() => router.push("/villas")}
             >
               Explore villas
-              <Image src={RightIcon} width={20} height={20} alt='' />
+              <Image src={RightIcon} width={20} height={20} alt="" />
             </button>
           </div>
           <div className={styles["explore_2"]}>
@@ -191,9 +191,9 @@ const HomePage = () => {
       <div className={styles.middleSection}>
         <div className={styles["middleSection_1"]}>
           {(screenWidth as number) > 767 ? (
-            <Image src={TrainIcon} alt='' width={150} height={180} />
+            <Image src={TrainIcon} alt="" width={150} height={180} />
           ) : (
-            <Image src={TrainIcon} alt='' width={58} height={62} />
+            <Image src={TrainIcon} alt="" width={58} height={62} />
           )}
 
           <div className={styles.textSection}>
@@ -205,9 +205,9 @@ const HomePage = () => {
         </div>
         <div className={styles["middleSection_2"]}>
           {(screenWidth as number) > 767 ? (
-            <Image src={HomeIcon} alt='' width={170} height={200} />
+            <Image src={HomeIcon} alt="" width={170} height={200} />
           ) : (
-            <Image src={HomeIcon} alt='' width={65} height={70} />
+            <Image src={HomeIcon} alt="" width={65} height={70} />
           )}
 
           <div className={styles.textSection}>
@@ -237,25 +237,25 @@ const HomePage = () => {
           </div>
         </div>
         <button
-          type='button'
+          type="button"
           className={styles.exploreBtn}
           onClick={() => router.push("/amenities")}
         >
           Explore amenities
-          <Image src={RightIcon} width={20} height={20} alt='' />
+          <Image src={RightIcon} width={20} height={20} alt="" />
         </button>
       </div>
-      <div className={styles.ourLocationSection} id='location'>
+      <div className={styles.ourLocationSection} id="location">
         <div className={styles.ourLocation}>Our location</div>
         <div className={styles.mapImage}></div>
         <Link
           href={"https://maps.app.goo.gl/XVjPCCEVAQWr7Hyo9?g_st=iw"}
           className={styles.viewBtn}
-          target='_blank'
+          target="_blank"
         >
           VIEW ON GOOGLE MAPS&nbsp;
-          <Image src={PlayIcon} width={6} height={10} alt='' />
-          <Image src={PlayIcon} width={6} height={10} alt='' />
+          <Image src={PlayIcon} width={6} height={10} alt="" />
+          <Image src={PlayIcon} width={6} height={10} alt="" />
         </Link>
       </div>
       <Footer />

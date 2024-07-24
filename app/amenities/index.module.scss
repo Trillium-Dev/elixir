@@ -89,16 +89,10 @@
 }
 
 .imageSection1 {
-  height: 100vh;
-  min-width: 1200px;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 80vh;
 
   @include mobile {
-    min-width: 414px;
-    max-height: 359px;
+    height: 30vh;
   }
 }
 

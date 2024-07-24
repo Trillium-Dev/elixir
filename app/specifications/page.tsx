@@ -52,7 +52,7 @@ const Specification = () => {
       <div className={styles.list}>
         {SpecificationsList.map((spec, index) => {
           return (
-            <div className={styles.accordionSection}>
+            <div className={styles.accordionSection} key={index}>
               <div className={styles.titleSection}>
                 <div className={styles.title}>
                   <Image src={spec?.icon} width={20} height={20} alt="" />

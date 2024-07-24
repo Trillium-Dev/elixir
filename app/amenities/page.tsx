@@ -107,19 +107,17 @@ const Amenities = () => {
         <RCarousel type="amenities">
           {AmenetiesImg.map((item, ind) => {
             return (
-              <div
-                style={{
-                  backgroundImage: `url(${item.image.src})`,
-                  height: "100vh",
-                  minWidth: "1200px",
-                  maxWidth: "100%",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                }}
-                className={styles.imageSection1}
-                key={ind}
-              ></div>
+              <div style={{}} key={ind}>
+                <Image
+                  alt=""
+                  src={item.image}
+                  style={{
+                    objectFit: "contain",
+                    height: "100%",
+                    width: "100%",
+                  }}
+                />
+              </div>
             );
           })}
         </RCarousel>

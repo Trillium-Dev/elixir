@@ -5,17 +5,17 @@ import "react-multi-carousel/lib/styles.css";
 
 const villasResponsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 1500, min: 1024 },
     items: 2.5,
     slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1024, min: 768 },
     items: 2,
     slidesToSlide: 2, // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 768, min: 0 },
     items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
@@ -30,22 +30,30 @@ function RCarousel({
   return (
     <Carousel
       additionalTransfrom={0}
-      draggable={false}
+      arrows
+      autoPlay
+      autoPlaySpeed={5000}
+      centerMode={false}
+      className=""
+      containerClass="container-with-dots"
+      dotListClass=""
+      draggable
+      focusOnSelect={false}
+      infinite
+      itemClass=""
+      keyBoardControl
+      minimumTouchDrag={80}
+      pauseOnHover
+      renderArrowsWhenDisabled={false}
+      renderButtonGroupOutside={false}
+      renderDotsOutside={false}
       responsive={getResponsiveType(type)}
-      ssr={true} // means to render carousel on server-side.
-      infinite={true}
-      autoPlaySpeed={3000}
-      keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
-      containerClass="carousel-container"
-      renderDotsOutside={true}
-      // removeArrowOnDeviceType={["tablet", "mobile"]}
-      dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-40-px"
+      rewind={false}
+      rewindWithAnimation={false}
       rtl={false}
       shouldResetAutoplay
-      minimumTouchDrag={80}
+      showDots={false}
+      sliderClass=""
       swipeable
     >
       {children}

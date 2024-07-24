@@ -88,17 +88,12 @@ const HomePage = () => {
         <RCarousel type="hero">
           {HeroImg.map((item, ind) => {
             return (
-              <article style={{ padding: "0 0.5rem" }}>
+              <article className={styles.heroSectionCard} key={ind}>
                 <div
                   style={{
                     backgroundImage: `url(${item.image.src})`,
-                    height: "600px",
-                    width: "800px",
-                    maxWidth: "100%",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
                   }}
+                  className={styles.heroImage}
                   key={ind}
                 ></div>
               </article>

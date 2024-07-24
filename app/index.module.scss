@@ -61,6 +61,27 @@
   }
 }
 
+.heroSectionCard {
+  padding: 0 0.5rem;
+
+  & .heroImage {
+    height: 70vh;
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include mobile {
+      height: 50vh;
+    }
+  }
+
+  @include mobile {
+    padding: 0;
+    max-height: 60vh;
+  }
+}
 
 .imagesSection {
   display: flex;
@@ -327,7 +348,7 @@
       flex: 1;
 
       @include mobile {
-        gap: 16px;
+        gap: 4px;
         align-items: center;
         overflow-x: auto;
         // flex-direction: column;

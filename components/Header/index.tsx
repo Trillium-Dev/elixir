@@ -106,10 +106,11 @@ const Header = ({ customClass = "" }: IHeader) => {
         />
         <div className={styles.menuHeader}>MENU</div>
         <div className={styles.menuList}>
-          {mobileHeaderTabs?.map((headerItem) => (
+          {mobileHeaderTabs?.map((headerItem, ind) => (
             <Link
               href={headerItem.url}
               className={styles.menuItem}
+              key={ind}
               onClick={() => {
                 if (headerItem.name === "Enquire now")
                   setOpenEnquireModal(true);

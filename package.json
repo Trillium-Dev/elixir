@@ -14,7 +14,6 @@
     "node-sass": "^9.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-elastic-carousel": "^0.11.5",
     "react-multi-carousel": "^2.8.5",
     "sass": "^1.69.5"
   },

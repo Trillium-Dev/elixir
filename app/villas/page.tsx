@@ -81,42 +81,12 @@ const Villas = () => {
         />
       </video> */}
       <div className={styles.header}>EAST FACING VILLAS</div>
-      <RCarousel type="villas">
-        {EastFacingVllas?.map((villa) => (
-          <div
-            className={styles.slide}
-            style={{ backgroundImage: `url(${villa?.image?.src})` }}
-          >
-            <div className={styles.text}>{villa.text}</div>
-            <div className={styles["exploreBtn_container"]}>
-              <button
-                type="button"
-                className={styles.exploreBtn}
-                onClick={() => handleClickOnVillas(villa?.id)}
-              >
-                explore plans
-                {(screenWidth as number) < 767 ? (
-                  <Image src={PlayIconWhite} alt="" width={5} height={4} />
-                ) : (
-                  <Image src={PlayIconWhite} alt="" width={7} height={11} />
-                )}
-                {(screenWidth as number) < 767 ? (
-                  <Image src={PlayIconWhite} alt="" width={5} height={4} />
-                ) : (
-                  <Image src={PlayIconWhite} alt="" width={7} height={11} />
-                )}
-              </button>
-            </div>
-          </div>
-        ))}
-      </RCarousel>
-      <div className={styles.container}>
-        <div className={styles.headerWest}>WEST FACING VILLAS</div>
-        {/* <div className={styles.slidesContainer}> */}
+      <section className={styles.villasCarousel}>
         <RCarousel type="villas">
-          {WestFacingVillas?.map((villa) => (
+          {EastFacingVllas?.map((villa, index) => (
             <div
               className={styles.slide}
+              key={index}
               style={{ backgroundImage: `url(${villa?.image?.src})` }}
             >
               <div className={styles.text}>{villa.text}</div>
@@ -142,6 +112,42 @@ const Villas = () => {
             </div>
           ))}
         </RCarousel>
+      </section>
+      <div className={styles.container}>
+        <div className={styles.headerWest}>WEST FACING VILLAS</div>
+        {/* <div className={styles.slidesContainer}> */}
+        <section className={styles.villasCarousel}>
+          <RCarousel type="villas">
+            {WestFacingVillas?.map((villa, index) => (
+              <div
+                className={styles.slide}
+                key={index}
+                style={{ backgroundImage: `url(${villa?.image?.src})` }}
+              >
+                <div className={styles.text}>{villa.text}</div>
+                <div className={styles["exploreBtn_container"]}>
+                  <button
+                    type="button"
+                    className={styles.exploreBtn}
+                    onClick={() => handleClickOnVillas(villa?.id)}
+                  >
+                    explore plans
+                    {(screenWidth as number) < 767 ? (
+                      <Image src={PlayIconWhite} alt="" width={5} height={4} />
+                    ) : (
+                      <Image src={PlayIconWhite} alt="" width={7} height={11} />
+                    )}
+                    {(screenWidth as number) < 767 ? (
+                      <Image src={PlayIconWhite} alt="" width={5} height={4} />
+                    ) : (
+                      <Image src={PlayIconWhite} alt="" width={7} height={11} />
+                    )}
+                  </button>
+                </div>
+              </div>
+            ))}
+          </RCarousel>
+        </section>
         {/* </div> */}
       </div>
       <div className={styles.headingSection}>

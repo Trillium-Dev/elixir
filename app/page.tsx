@@ -15,6 +15,8 @@ import { useRouter } from "next/navigation";
 import WhatsApp from "../components/WhatsApp";
 import RCarousel from "@/components/RCarousel";
 import { HeroImg } from "@/constants";
+import EastFacingVilla from "../assets/images/Elixir-east-villa.png";
+import WestFacingVilla from "../assets/images/Elixir_west-side.png";
 
 const HomePage = () => {
   const router = useRouter();
@@ -155,6 +157,15 @@ const HomePage = () => {
               onMouseEnter={handleHoverEventEastFacing}
               onMouseLeave={handleHoverEventEastFacing}
             >
+              <Image
+                src={EastFacingVilla}
+                alt={"east-facing-villas"}
+                className={styles.villasEastFacing}
+                layout="responsive"
+                quality={100}
+                placeholder="blur"
+                priority
+              />
               {showEastFacing && (
                 <div className={styles["villas_1_para"]}>
                   Indulge in the epitome of luxury with our 3+BHK villas,
@@ -173,6 +184,15 @@ const HomePage = () => {
               onMouseEnter={handleHoverEventWestFacing}
               onMouseLeave={handleHoverEventWestFacing}
             >
+              <Image
+                src={WestFacingVilla}
+                alt={"west-facing-villas"}
+                className={styles.villasWestFacing}
+                layout="responsive"
+                placeholder="blur"
+                quality={100}
+                priority
+              />
               {showWestFacing && (
                 <div className={styles["villas_2_para"]}>
                   Uncover the essence of luxury in our 4+BHK villas, offering
@@ -215,12 +235,39 @@ const HomePage = () => {
       </div>
       <div className={styles.playSection}>
         <div className={styles["playSection_1"]}>
+          <Image
+            src={require("../public/images/Elixir_1.png")}
+            alt={"east-facing-villas"}
+            className={styles.playSectionZone}
+            layout="responsive"
+            quality={100}
+            placeholder="blur"
+            priority
+          />
           <div className={styles.sectionText}>PLAY ZONE</div>
         </div>
         <div className={styles["playSection_2"]}>
+          <Image
+            src={require("../public/images/Elixir_3.png")}
+            alt={"east-facing-villas"}
+            className={styles.playSectionZone}
+            layout="responsive"
+            placeholder="blur"
+            quality={100}
+            priority
+          />
           <div className={styles.sectionText}>RECREATION ZONE</div>
         </div>
         <div className={styles["playSection_3"]}>
+          <Image
+            src={require("../public/images/Elixir_2.png")}
+            alt={"east-facing-villas"}
+            className={styles.playSectionZone}
+            layout="responsive"
+            placeholder="blur"
+            quality={100}
+            priority
+          />
           <div className={styles.sectionText}>FITNESS ZONE</div>
         </div>
       </div>

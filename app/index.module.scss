@@ -63,9 +63,9 @@
 
 .heroSectionCard {
   padding: 0 0.5rem;
+  // height: 70vh;
 
   & .heroImage {
-    height: 70vh;
     width: 100%;
     max-width: 100%;
     background-size: cover;
@@ -552,6 +552,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
     @include mobile {
       inset-inline: 5%;
       height: 100%;

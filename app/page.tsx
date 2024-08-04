@@ -87,13 +87,15 @@ const HomePage = () => {
           {HeroImg.map((item, ind) => {
             return (
               <article className={styles.heroSectionCard} key={ind}>
-                <div
-                  style={{
-                    backgroundImage: `url(${item.image.src})`,
-                  }}
-                  className={styles.heroImage}
-                  key={ind}
-                ></div>
+                <Image
+                  src={item.image}
+                  alt="My Image"
+                  height={0}
+                  width={500}
+                  layout="responsive"
+                  placeholder="blur"
+                  priority
+                />
               </article>
             );
           })}

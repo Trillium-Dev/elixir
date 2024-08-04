@@ -90,18 +90,12 @@ const HomePage = () => {
                 <Image
                   src={item.image}
                   alt="My Image"
+                  height={0}
                   width={500}
-                  height={800}
                   layout="responsive"
+                  placeholder="blur"
                   priority
                 />
-                {/* <div
-                  style={{
-                    backgroundImage: `url(${item.image.src})`,
-                  }}
-                  className={styles.heroImage}
-                  key={ind}
-                ></div> */}
               </article>
             );
           })}

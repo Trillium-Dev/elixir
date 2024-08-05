@@ -346,13 +346,21 @@
       .villas {
         &_1 {
           position: relative;
-          background-image: url("../assets/images/Elixir-east-villa.png");
+          // background-image: url("../assets/images/Elixir-east-villa.png");
           background-position: center;
           width: 399px;
           height: 408px;
           background-repeat: no-repeat;
           background-size: cover;
           transition: all 0.5s ease-in-out;
+
+          & .villasEastFacing {
+            position: absolute;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: -1;
+            object-fit: cover;
+          }
 
           &.showImage {
             background-image: none;
@@ -425,12 +433,21 @@
 
         &_2 {
           position: relative;
-          background-image: url("../assets/images/Elixir_west-side.png");
+          // background-image: url("../assets/images/Elixir_west-side.png");
           width: 399px;
           height: 408px;
           background-repeat: no-repeat;
           background-size: cover;
           transition: all 0.5s ease-in-out;
+
+          & .villasWestFacing {
+            position: absolute;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: -1;
+            object-fit: cover;
+
+          }
 
           &.showImage {
             background-image: none;
@@ -730,13 +747,23 @@
     height: 369px;
   }
 
+  & .playSectionZone {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1;
+    object-fit: cover;
+  }
+
   &_1 {
     position: relative;
-    background-image: url("../public/images/Elixir_1.png");
+    // background-image: url("../public/images/Elixir_1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
+
+
 
     &::before {
       content: "";
@@ -752,13 +779,13 @@
 
     @include mobile {
       min-width: 33vw;
-      background-image: url("../public/images/Elixir_1_mobile.png");
+      // background-image: url("../public/images/Elixir_1_mobile.png");
     }
   }
 
   &_2 {
     position: relative;
-    background-image: url("../public/images/Elixir_3.png");
+    // background-image: url("../public/images/Elixir_3.png");
     // background-position: center;
     // background-size: cover;
     background-repeat: no-repeat;
@@ -780,13 +807,13 @@
 
     @include mobile {
       min-width: 33vw;
-      background-image: url("../public/images/Elixir_3_mobile.png");
+      // background-image: url("../public/images/Elixir_3_mobile.png");
     }
   }
 
   &_3 {
     position: relative;
-    background-image: url("../public/images/Elixir_2.png");
+    // background-image: url("../public/images/Elixir_2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -806,7 +833,7 @@
 
     @include mobile {
       min-width: 33vw;
-      background-image: url("../public/images/Elixir_2_mobile.png");
+      // background-image: url("../public/images/Elixir_2_mobile.png");
     }
   }
 

@@ -21,6 +21,7 @@
       justify-content: flex-start;
     }
   }
+
   .infoContainer {
     display: flex;
     flex-direction: column;
@@ -42,6 +43,7 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+
         @include mobile {
           font-size: 14px;
         }

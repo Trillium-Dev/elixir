@@ -21,7 +21,7 @@ export const getResponsiveType = (type: string) => {
         return {
             desktop: {
                 breakpoint: { max: 3000, min: 1024 },
-                items: 1.55,
+                items: 1.5,
                 slidesToSlide: 1, // optional, default to 1.
             },
             tablet: {

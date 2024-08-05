@@ -73,20 +73,32 @@
   }
 
   .bgImage {
-    background-image: url("../../assets/images/Elixir_7-5.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90vw;
-    height: 100vh;
-    max-width: 1200px;
-    max-height: 980px;
+    // background-image: url('../../assets/images/Elixir_7-5.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // max-width: 1200px;
+    // max-height: 980px;
+
+
+    & img {
+      height: 100% !important;
+      width: 100%;
+      object-fit: cover;
+    }
 
     @include mobile {
-      width: 100vw;
-      height: 359px;
+
+      // width: 100vw;
+      // height: 360px;
+
+      & img {
+        // object-fit: cover;
+        // object-fit: none;
+      }
     }
   }
 }
+
 
 .imageSection1 {
   height: 80vh;
@@ -166,6 +178,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
         @include mobile {
           font-size: 14px;
         }

@@ -17,20 +17,20 @@
     color: #8c6542;
     font-family: Platform;
     font-style: normal;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.8px;
     text-align: center;
 
     @include mobile {
-      font-size: 36px;
+      font-size: 32px;
     }
   }
 
   .subHeading {
     color: #8c6542;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: 34px;
@@ -55,7 +55,7 @@
   .galaryBtn {
     @include btn-class;
     color: #22401e;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -230,7 +230,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: #8c6542;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: 16px;
@@ -247,7 +247,7 @@
       bottom: 20px;
       @include btn-class;
       color: #22401e;
-      font-size: 12px;
+      font-size: 10px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
@@ -267,14 +267,14 @@
     color: #8c6542;
     font-family: Platform;
     font-style: normal;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.8px;
     text-align: center;
 
     @include mobile {
-      font-size: 24px;
+      font-size: 20px;
       padding: 0 20px;
     }
   }
@@ -296,28 +296,28 @@
 
       &_text {
         color: #8c6542;
-        font-size: 28px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 300;
         line-height: 34px;
         letter-spacing: -0.56px;
 
         @include mobile {
-          font-size: 22px;
+          font-size: 18px;
           padding: 0 20px;
         }
       }
 
       &_greenText {
         color: #22401e;
-        font-size: 28px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: 34px;
         letter-spacing: -0.56px;
 
         @include mobile {
-          font-size: 24px;
+          font-size: 20px;
           padding: 0 20px;
         }
       }
@@ -330,7 +330,7 @@
         background: #22401e;
         color: #fff;
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
@@ -410,7 +410,7 @@
             right: 0;
             padding: 16px 10px;
             color: #fcfbfa;
-            font-size: 20px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 500;
             line-height: 20px;
@@ -422,7 +422,7 @@
                 #1d1d1f 92.75%);
 
             @include mobile {
-              font-size: 14px;
+              font-size: 12px;
               // width: 240px;
             }
           }
@@ -430,7 +430,7 @@
           .villas_1_para {
             padding: 30px 16px;
             color: #fff;
-            font-size: 24px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 300;
             line-height: 36px;
@@ -438,7 +438,7 @@
 
             @include mobile {
               padding: 16px;
-              font-size: 20px;
+              font-size: 16px;
             }
           }
         }
@@ -496,7 +496,7 @@
             bottom: 0;
             padding: 16px 10px;
             color: #fcfbfa;
-            font-size: 20px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 500;
             line-height: 20px;
@@ -509,7 +509,7 @@
                 #1d1d1f 92.75%);
 
             @include mobile {
-              font-size: 14px;
+              font-size: 12px;
               // width: 240px;
             }
           }
@@ -517,7 +517,7 @@
           .villas_2_para {
             padding: 30px 16px;
             color: #fff;
-            font-size: 24px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 300;
             line-height: 36px;
@@ -525,7 +525,7 @@
 
             @include mobile {
               padding: 16px;
-              font-size: 20px;
+              font-size: 16px;
             }
           }
         }
@@ -550,7 +550,7 @@
   .ourLocation {
     font-family: Platform;
     color: #fcfbfa;
-    font-size: 40px;
+    font-size: 36px;
     letter-spacing: 0.8px;
     font-style: normal;
     font-weight: 400;
@@ -584,7 +584,7 @@
     bottom: 65px;
     @include btn-class;
     color: #22401e;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -624,7 +624,7 @@
     .amnetiesHeader {
       color: #8c6542;
       font-family: Platform;
-      font-size: 40px;
+      font-size: 36px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -632,13 +632,13 @@
       text-align: center;
 
       @include mobile {
-        font-size: 28px;
+        font-size: 24px;
       }
     }
 
     .amnetiesText {
       color: #8c6542;
-      font-size: 28px;
+      font-size: 24px;
       font-style: normal;
       font-weight: 300;
       line-height: normal;
@@ -646,7 +646,7 @@
       text-align: center;
 
       @include mobile {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   }
@@ -656,7 +656,7 @@
     border-radius: 5px;
     background: #22401e;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     display: inline-flex;
@@ -729,14 +729,14 @@
     gap: 5px;
     color: #fff;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: -0.64px;
 
     @include mobile {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 20px;
       gap: 3px;
     }
@@ -857,7 +857,7 @@
     left: 10px;
     bottom: 10px;
     color: #fff;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: 20px;

@@ -56,64 +56,233 @@ const Gallary = () => {
       </div>
       <div className={styles.imagesContainer}>
         {(screenWidth as number) < 767 ? (
-          <Image src={Image1} alt="" width={380} height={283} />
+          <Image
+            src={Image1}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image1} alt="" width={411} height={306} />
+          <Image
+            src={Image1}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image2} alt="" width={380} height={283} />
+          <Image
+            src={Image2}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image2} alt="" width={411} height={306} />
+          <Image
+            src={Image2}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image3} alt="" width={380} height={283} />
+          <Image
+            src={Image3}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image3} alt="" width={411} height={306} />
+          <Image
+            src={Image3}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image4} alt="" width={380} height={283} />
+          <Image
+            src={Image4}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image4} alt="" width={411} height={306} />
+          <Image
+            src={Image4}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image5} alt="" width={380} height={283} />
+          <Image
+            src={Image5}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image5} alt="" width={411} height={306} />
+          <Image
+            src={Image5}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image6} alt="" width={380} height={283} />
+          <Image
+            src={Image6}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image6} alt="" width={411} height={306} />
+          <Image
+            src={Image6}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image7} alt="" width={380} height={283} />
+          <Image
+            src={Image7}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image7} alt="" width={411} height={306} />
+          <Image
+            src={Image7}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image8} alt="" width={380} height={283} />
+          <Image
+            src={Image8}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image8} alt="" width={411} height={306} />
+          <Image
+            src={Image8}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image9} alt="" width={380} height={283} />
+          <Image
+            src={Image9}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image9} alt="" width={411} height={306} />
+          <Image
+            src={Image9}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image10} alt="" width={380} height={283} />
+          <Image
+            src={Image10}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image10} alt="" width={411} height={306} />
+          <Image
+            src={Image10}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image11} alt="" width={380} height={283} />
+          <Image
+            src={Image11}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image11} alt="" width={411} height={306} />
+          <Image
+            src={Image11}
+            alt=""
+            width={411}
+            height={306}
+            placeholder="blur"
+            priority
+          />
         )}
         {(screenWidth as number) < 767 ? (
-          <Image src={Image12} alt="" width={380} height={283} />
+          <Image
+            src={Image12}
+            alt=""
+            width={380}
+            height={283}
+            placeholder="blur"
+            priority
+          />
         ) : (
-          <Image src={Image12} alt="" width={411} height={306} />
+          <Image
+            src={Image12}
+            alt=""
+            width={411}
+            height={306}
+            quality={100}
+            placeholder="blur"
+            priority
+          />
         )}
       </div>
     </div>

@@ -1,5 +1,5 @@
-@import 'styles/colors';
-@import 'styles/mixins';
+@import "styles/colors";
+@import "styles/mixins";
 
 .headingSection {
   display: flex;
@@ -152,7 +152,6 @@
       justify-content: center;
       gap: 30px;
       border-radius: 16px;
-      background: rgba(34, 64, 30, 0.5);
       width: 275px;
       height: 313px;
 

@@ -70,23 +70,20 @@ const Villas = () => {
           <Image src={DownloadIcon} alt="" width={11} height={6} />
         </div>
       </Link>
-      {/* <video width="100%" height="240" controls preload="none">
-        <source
-          src={
-            "https://drive.google.com/file/d/1Oh7zmKxtnFpyxxybgtR1Y6nUvZfAMF37/view?usp=sharing"
-          }
-          type="video/mp4"
-        />
-      </video> */}
       <div className={styles.header}>EAST FACING VILLAS</div>
       <section className={styles.villasCarousel}>
         <RCarousel type="villas">
           {EastFacingVllas?.map((villa, index) => (
-            <div
-              className={styles.slide}
-              key={index}
-              style={{ backgroundImage: `url(${villa?.image?.src})` }}
-            >
+            <article className={styles.slide} key={villa?.id}>
+              <Image
+                src={villa?.image}
+                alt={`east-${index}`}
+                layout="responsive"
+                placeholder="blur"
+                className="villas-image"
+                blurDataURL={villa?.image?.blurDataURL}
+                priority
+              />
               <div className={styles.text}>{villa.text}</div>
               <div className={styles["exploreBtn_container"]}>
                 <button
@@ -107,21 +104,24 @@ const Villas = () => {
                   )}
                 </button>
               </div>
-            </div>
+            </article>
           ))}
         </RCarousel>
       </section>
       <div className={styles.container}>
         <div className={styles.headerWest}>WEST FACING VILLAS</div>
-        {/* <div className={styles.slidesContainer}> */}
         <section className={styles.villasCarousel}>
           <RCarousel type="villas">
             {WestFacingVillas?.map((villa, index) => (
-              <div
-                className={styles.slide}
-                key={index}
-                style={{ backgroundImage: `url(${villa?.image?.src})` }}
-              >
+              <article className={styles.slide} key={villa?.id}>
+                <Image
+                  src={villa?.image}
+                  alt={`west-${index}`}
+                  layout="responsive"
+                  placeholder="blur"
+                  // blurDataURL={villa?.image?.blurDataURL}
+                  priority
+                />
                 <div className={styles.text}>{villa.text}</div>
                 <div className={styles["exploreBtn_container"]}>
                   <button
@@ -142,11 +142,10 @@ const Villas = () => {
                     )}
                   </button>
                 </div>
-              </div>
+              </article>
             ))}
           </RCarousel>
         </section>
-        {/* </div> */}
       </div>
       <div className={styles.headingSection}>
         <div className={styles.heading}>Masterplan</div>

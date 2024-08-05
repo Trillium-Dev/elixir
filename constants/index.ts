@@ -621,4 +621,5 @@ export const outdorrAmenities = [
   { text: "Children’s Play Area", icon: PlayIcon },
   { text: "Jogging Track", icon: JoggingIcon },
   { text: "Cricket Practice Nets", icon: CricketIcon },
+  { text: "", icon: "" },
 ];

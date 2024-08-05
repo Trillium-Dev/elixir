@@ -142,7 +142,7 @@ const Amenities = () => {
         <div className={styles.cards}>
           {outdorrAmenities?.map((item, idx) => {
             return (
-              <div className={styles.card} key={idx}>
+              <div className={styles.amenitiesCard} key={idx}>
                 {(screenWidth as number) < 767 ? (
                   <Image src={item?.icon} alt="" height={68} />
                 ) : (

@@ -16,22 +16,20 @@
     color: #8c6542;
     font-family: Platform;
     font-style: normal;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.8px;
     text-align: center;
 
-    // width: 90%;
-
     @include mobile {
-      font-size: 36px;
+      font-size: 30px;
     }
   }
 
   .subHeading {
     color: #8c6542;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 34px;
     font-style: normal;
     font-weight: 300;
@@ -39,7 +37,7 @@
     text-align: center;
 
     @include mobile {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
@@ -47,7 +45,7 @@
 .imageSection {
   .btnContainer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: 20px;
 
     .downloadBtn {
@@ -57,7 +55,7 @@
       @include btn-class;
       color: #22401e;
       text-align: right;
-      font-size: 20px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -65,7 +63,6 @@
     }
 
     @include mobile {
-      justify-content: flex-start;
       padding: 0 20px;
 
       .downloadBtn {
@@ -82,7 +79,6 @@
     // max-width: 1200px;
     // max-height: 980px;
 
-
     & img {
       height: 100% !important;
       width: 100%;
@@ -90,7 +86,6 @@
     }
 
     @include mobile {
-
       // width: 100vw;
       // height: 360px;
 
@@ -101,7 +96,6 @@
     }
   }
 }
-
 
 .imageSection1 {
   height: 80vh;
@@ -114,6 +108,8 @@
 .cardsSection {
   display: flex;
   min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
   background-color: #7a8c51;
   padding: 50px;
   margin-top: 50px;
@@ -126,12 +122,11 @@
   .heading {
     color: #fff;
     text-align: justify;
-    font-size: 40px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 500;
     line-height: 60px;
     letter-spacing: -0.96px;
-    width: 200px;
 
     @include mobile {
       display: none;
@@ -141,6 +136,7 @@
   .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 
     @include mobile {
@@ -177,7 +173,52 @@
       .text {
         color: #fcfbfa;
         text-align: center;
-        font-size: 25px;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .amenitiesCard:last-child {
+      @include mobile {
+        display: none;
+      }
+    }
+    .amenitiesCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      border-radius: 16px;
+      width: 275px;
+      height: 313px;
+
+      img {
+        max-width: 110px;
+        max-height: 80px;
+      }
+
+      @include mobile {
+        width: 170px;
+        height: 190px;
+        gap: 20px;
+
+        img {
+          max-width: 110px;
+          max-height: 80px;
+        }
+      }
+
+      .text {
+        color: #fcfbfa;
+        text-align: center;
+        font-size: 21px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

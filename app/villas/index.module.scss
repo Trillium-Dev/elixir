@@ -91,22 +91,22 @@
 
 .slide {
   position: relative;
-  background-size: cover;
-  height: 436px;
-  background-repeat: no-repeat;
   margin: 0 1rem;
+  width: 29rem;
+  height: auto;
+
+  .villas-image {
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover;
+  }
 
   &:first-child {
     margin-left: 0;
   }
 
   @include mobile {
-    height: 190px;
     margin: 0 0.25rem !important;
-  }
-
-  &.westSide {
-    background-image: url("../../assets/images/Elixir_west-side.png");
   }
 
   &::before {

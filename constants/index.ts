@@ -1,4 +1,4 @@
-import E1200GF from "assets/images/villas/E1200-GF.png";
+// import E1200GF from "assets/images/villas/E1200-GF.png";
 import E1200FF from "assets/images/villas/E1200-FF.png";
 import E1200SF from "assets/images/villas/E1200-SF.png";
 
@@ -29,6 +29,21 @@ import W2105SF from "assets/images/villas/W2105-3.png";
 import W2400GF from "assets/images/villas/Elixir-west-villa-2400-6.png";
 import W2400FF from "assets/images/villas/Elixir-west-villa-2400-7.png";
 import W2400SF from "assets/images/villas/Elixir-west-villa-2400-8.png";
+
+//east villas floor plan
+import E1200GF from "assets/images/villa/EAST_FACING_2705_GF.png";
+
+//east villas
+import EastVillas1 from "assets/images/east-villas/EAST_FACING_2705.png";
+import EastVillas2 from "assets/images/east-villas/EAST_FACING_3376.png";
+import EastVillas3 from "assets/images/east-villas/EAST_FACING_4615.png";
+import EastVillas4 from "assets/images/east-villas/EAST_FACING_5418.png";
+
+//west villas
+import WestVillas1 from "assets/images/west-villas/WEST_FACING_2688.png";
+import WestVillas2 from "assets/images/west-villas/WEST_FACING_3375.png";
+import WestVillas3 from "assets/images/west-villas/WEST_FACING_4583.png";
+import WestVillas4 from "assets/images/west-villas/WEST_FACING_5431.png";
 
 // Icons
 
@@ -72,11 +87,6 @@ import SpecsIcon from "../public/assets/icons/specifications.svg";
 import EnquireNowIcon from "../public/assets/icons/enquire-now.svg";
 import WhatsappIcon from "../public/assets/icons/whatsapp.svg";
 
-import EastFacing1200 from "../assets/images/villaImages/east-facing-1200.png";
-import EastFacing1500 from "../assets/images/villaImages/east-facing-1500.png";
-import EastFacing2105 from "../assets/images/villaImages/east-facing-2105.png";
-import EastFacing2400 from "../assets/images/villaImages/east-facing-2400.png";
-
 import WestFacing1200 from "../assets/images/villaImages/west-facing-1200.png";
 import WestFacing1500 from "../assets/images/villaImages/west-facing-1500.png";
 import WestFacing2105 from "../assets/images/villaImages/west-facing-2105.png";
@@ -109,43 +119,43 @@ export const HeaderTabs = [
 export const HeroImg = [
   {
     id: 1,
-    image: First
+    image: First,
   },
   {
     id: 2,
-    image: Second
+    image: Second,
   },
   {
     id: 3,
-    image: Third
+    image: Third,
   },
   {
     id: 4,
-    image: Fourth
+    image: Fourth,
   },
   {
     id: 5,
-    image: Fifth
+    image: Fifth,
   },
-]
+];
 export const AmenetiesImg = [
   {
     id: 1,
-    image: ABg1
+    image: ABg1,
   },
   {
     id: 2,
-    image: ABg2
+    image: ABg2,
   },
   {
     id: 3,
-    image: ABg3
+    image: ABg3,
   },
   {
     id: 4,
-    image: ABg4
-  }
-]
+    image: ABg4,
+  },
+];
 export const mobileHeaderTabs = [
   { name: "Villas", url: "/villas", icon: VillasIcon },
   { name: "Amenities", url: "/amenities", icon: AmenitiesIcon },
@@ -181,7 +191,7 @@ export const FooterInfo = [
   {
     title: "CONTACT US ON",
     value: "sales@dsrinfra.com",
-    number: "(+91) 99641 92000",
+    number: "(+91) 99641 92000 | (+91) 96866 07924",
   },
 ];
 
@@ -278,9 +288,9 @@ export const VillasPages = (type: string) => {
       return {
         name: "EAST FACING VILLA",
         description: [
-          "3-BHK + 1",
+          "4-BHK",
           "PLOT AREA : 1200 sqft. (30’ x 40’)",
-          "TOTAL BUILT UP AREA : 2587 sqft.",
+          "TOTAL BUILT UP AREA : 2705 sqft.",
         ],
         imagesArr: [
           {
@@ -517,22 +527,22 @@ export const EastFacingVllas = [
   {
     text: "2705 sqft",
     id: "E1200",
-    image: EastFacing1200,
+    image: EastVillas1,
   },
   {
     text: "3376 sqft",
     id: "E1500",
-    image: EastFacing1500,
+    image: EastVillas2,
   },
   {
     text: "4615 sqft",
     id: "E2105",
-    image: EastFacing2105,
+    image: EastVillas3,
   },
   {
     text: "5418 sqft",
     id: "E2400",
-    image: EastFacing2400,
+    image: EastVillas4,
   },
 ];
 
@@ -540,22 +550,22 @@ export const WestFacingVillas = [
   {
     text: "2688 sqft",
     id: "W1200",
-    image: WestFacing1200,
+    image: WestVillas1,
   },
   {
     text: "3375 sqft",
     id: "W1500",
-    image: WestFacing1500,
+    image: WestVillas2,
   },
   {
     text: "4583 sqft",
     id: "W2105",
-    image: WestFacing2105,
+    image: WestVillas3,
   },
   {
     text: "5431 sqft",
     id: "W2400",
-    image: WestFacing2400,
+    image: WestVillas4,
   },
 ];
 
@@ -569,11 +579,11 @@ export const clubhouseAmenities = [
     icon: GymIcon,
   },
   {
-    text: "Yoga & meditation hall",
+    text: "Yoga & Meditation Hall",
     icon: YogaIcon,
   },
   {
-    text: "Indoor games",
+    text: "Indoor Games",
     icon: IndoorIcon,
   },
   {
@@ -581,34 +591,34 @@ export const clubhouseAmenities = [
     icon: LibraryIcon,
   },
   {
-    text: "Multi-purpose hall",
+    text: "Multi-purpose Hall",
     icon: MultiIcon,
   },
   {
-    text: "Banquet lawns",
+    text: "Banquet Lawns",
     icon: BanquetIcon,
   },
 ];
 
 export const outdorrAmenities = [
   {
-    text: "Swimming pool",
+    text: "Swimming Pool",
     icon: SwimmingIcon,
   },
   {
-    text: "Cycling track",
+    text: "Cycling Track",
     icon: CyclingIcon,
   },
   {
-    text: "Basketball court",
+    text: "Basketball Court",
     icon: BasketballIcon,
   },
   {
-    text: "Badminton court",
+    text: "Badminton Court",
     icon: BadmintonIcon,
   },
-  { text: "Skating rink", icon: SkatingIcon },
-  { text: "Children’s play area", icon: PlayIcon },
-  { text: "Jogging track", icon: JoggingIcon },
-  { text: "Cricket practice nets", icon: CricketIcon },
+  { text: "Skating Rink", icon: SkatingIcon },
+  { text: "Children’s Play Area", icon: PlayIcon },
+  { text: "Jogging Track", icon: JoggingIcon },
+  { text: "Cricket Practice Nets", icon: CricketIcon },
 ];

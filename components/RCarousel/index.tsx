@@ -31,8 +31,8 @@ function RCarousel({
     <Carousel
       additionalTransfrom={0}
       arrows
-      autoPlay
-      autoPlaySpeed={5000}
+      // autoPlay
+      // autoPlaySpeed={5000}
       centerMode={false}
       className=""
       containerClass="container-with-dots"

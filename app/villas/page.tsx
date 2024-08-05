@@ -43,8 +43,6 @@ const Villas = () => {
     router.push(`/villas/${id}`);
   };
 
-  console.log(EastFacingVllas, "EastFacingVllas");
-
   return (
     <div className={cn("page-container")}>
       <Header />

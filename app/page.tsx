@@ -92,8 +92,9 @@ const HomePage = () => {
                 <Image
                   src={item.image}
                   alt="My Image"
-                  height={0}
                   width={500}
+                  sizes="100vw"
+                  quality={100}
                   layout="responsive"
                   placeholder="blur"
                   priority

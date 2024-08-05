@@ -77,7 +77,17 @@ const Amenities = () => {
             </div>
           </Link>
         </div>
-        <div className={styles.bgImage}></div>
+        <div className={styles.bgImage}>
+          <Image
+            src={require("../../assets/images/Elixir_7-5.png")}
+            alt="My Image"
+            layout="responsive"
+            placeholder="blur"
+            sizes="100vw" // Adjust image size based on viewport
+            quality={100}
+            priority
+          />
+        </div>
       </div>
 
       <div className={styles.cardsSection}>
@@ -107,15 +117,20 @@ const Amenities = () => {
         <RCarousel type="amenities">
           {AmenetiesImg.map((item, ind) => {
             return (
-              <div style={{}} key={ind}>
+              <div className={styles.amenetiesImg} key={ind}>
                 <Image
-                  alt=""
+                  alt="ameneties-img"
                   src={item.image}
                   style={{
-                    objectFit: "contain",
+                    objectFit: "cover",
                     height: "100%",
                     width: "100%",
                   }}
+                  layout="responsive"
+                  placeholder="blur"
+                  sizes="100vw"
+                  quality={100}
+                  priority
                 />
               </div>
             );

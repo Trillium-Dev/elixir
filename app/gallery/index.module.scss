@@ -3,11 +3,9 @@
 
 .container {
   height: 100%;
-  background: linear-gradient(
-    168deg,
-    rgba(29, 29, 31, 0.18) 0%,
-    rgba(29, 29, 31, 0.02) 100%
-  );
+  background: linear-gradient(168deg,
+      rgba(29, 29, 31, 0.18) 0%,
+      rgba(29, 29, 31, 0.02) 100%);
   backdrop-filter: blur(27.5px);
   padding: 34px 80px;
 
@@ -20,16 +18,17 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
     .text {
       color: #22401e;
-      font-size: 36px;
+      font-size: 32px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
       letter-spacing: -0.8px;
 
       @include mobile {
-        font-size: 28px;
+        font-size: 24px;
       }
     }
 

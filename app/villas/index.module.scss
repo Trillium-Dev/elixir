@@ -26,7 +26,7 @@
     text-align: center;
 
     @include mobile {
-      font-size: 32px;
+      font-size: 30px;
     }
   }
 
@@ -104,8 +104,6 @@
 .slide {
   position: relative;
   margin: 0 1rem;
-  width: 29rem;
-  height: auto;
 
   .villas-image {
     height: 100% !important;
@@ -213,6 +211,6 @@
     width: 100vw;
     height: 50vh;
     background-size: 120%;
-    margin-top: 30px;
+    margin-top: 0;
   }
 }

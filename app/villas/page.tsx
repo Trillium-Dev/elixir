@@ -58,18 +58,20 @@ const Villas = () => {
           terraces, perfectly curated for elevating urban living to new heights.
         </div>
       </div>
-      <Link
-        href="/assets/Elixir.pdf"
-        download
-        target="_blank"
-        className={styles.download}
-      >
-        <p>DOWNLOAD BROCHURE</p>
-        <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
-          <Image src={DownloadIcon} alt="" width={11} height={6} />
-          <Image src={DownloadIcon} alt="" width={11} height={6} />
-        </div>
-      </Link>
+      <div className={styles.downloadContainer}>
+        <Link
+          href="/assets/Elixir.pdf"
+          download
+          target="_blank"
+          className={styles.download}
+        >
+          <p>DOWNLOAD BROCHURE</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
+            <Image src={DownloadIcon} alt="" width={11} height={6} />
+            <Image src={DownloadIcon} alt="" width={11} height={6} />
+          </div>
+        </Link>
+      </div>
       <div className={styles.header}>EAST FACING VILLAS</div>
       <section className={styles.villasCarousel}>
         <RCarousel type="villas">

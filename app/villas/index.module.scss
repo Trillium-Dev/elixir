@@ -6,6 +6,7 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 125px;
+  text-align: center;
 
   @include mobile {
     padding: 0 20px;
@@ -17,59 +18,70 @@
     color: #8c6542;
     font-family: Platform;
     font-style: normal;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.8px;
-    width: 70%;
+    width: 100%;
+    text-align: center;
 
     @include mobile {
-      font-size: 36px;
+      font-size: 32px;
     }
   }
 
   .subHeading {
     color: #8c6542;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 34px;
     font-style: normal;
     font-weight: 300;
     letter-spacing: -0.56px;
+    text-align: center;
 
     @include mobile {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
 
-.download {
+.downloadContainer {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 5px;
-  color: #22401e;
-  text-align: right;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.4px;
-  @include btn-class;
-  margin-top: 32px;
+  justify-content: center;
 
-  @include mobile {
-    padding: 0 20px;
-    margin-top: 0;
+  .download {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #22401e;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: fit-content;
+    letter-spacing: -0.4px;
+    @include btn-class;
+    margin-top: 32px;
+
+    @include mobile {
+      padding: 0 20px;
+      margin-top: 0;
+    }
   }
 }
 
 .header {
   color: #22401e;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   margin-top: 25px;
   margin-bottom: 1.25rem;
+  text-align: center;
 
   @include mobile {
     padding: 0 20px;
@@ -129,7 +141,7 @@
     top: 15px;
     left: 15px;
     color: #fcfbfa;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -154,7 +166,7 @@
     .exploreBtn {
       @include btn-class;
       color: #fcfbfa;
-      font-size: 20px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 300;
       line-height: 20px;
@@ -174,12 +186,13 @@
 
   .headerWest {
     color: #fcfbfa;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-left: 50px;
     margin-bottom: 1.25rem;
+    text-align: center;
 
     @include mobile {
       padding-left: 20px;

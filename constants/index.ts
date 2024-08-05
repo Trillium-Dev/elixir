@@ -318,9 +318,9 @@ export const VillasPages = (type: string) => {
       return {
         name: "EAST FACING VILLA",
         description: [
-          "3-BHK + 1",
+          "4-BHK",
           "PLOT AREA : 1500 sqft. (30’ x 50’)",
-          "TOTAL BUILT UP AREA : 3285 sqft.",
+          "TOTAL BUILT UP AREA : 3376 sqft.",
         ],
         imagesArr: [
           {
@@ -348,9 +348,9 @@ export const VillasPages = (type: string) => {
       return {
         name: "EAST FACING VILLA",
         description: [
-          "3-BHK + 1",
+          "4-BHK",
           "PLOT AREA : 2105 sqft. (35’ x 60’)",
-          "TOTAL BUILT UP AREA : 4515 sqft.",
+          "TOTAL BUILT UP AREA : 4615 sqft.",
         ],
         imagesArr: [
           {
@@ -378,9 +378,9 @@ export const VillasPages = (type: string) => {
       return {
         name: "EAST FACING VILLA",
         description: [
-          "3-BHK + 1",
+          "4-BHK",
           "PLOT AREA : 2400 sqft. (40’ x 60’)",
-          "TOTAL BUILT UP AREA : 5286 sqft.",
+          "TOTAL BUILT UP AREA : 5418 sqft.",
         ],
         imagesArr: [
           {
@@ -407,9 +407,9 @@ export const VillasPages = (type: string) => {
       return {
         name: "WEST FACING VILLA",
         description: [
-          "4-BHK + 1",
+          "4-BHK",
           "PLOT AREA : 1200 sqft. (30’ x 40’)",
-          "TOTAL BUILT UP AREA : 2588 sqft.",
+          "TOTAL BUILT UP AREA : 2688 sqft.",
         ],
         imagesArr: [
           {
@@ -436,9 +436,9 @@ export const VillasPages = (type: string) => {
       return {
         name: "WEST FACING VILLA",
         description: [
-          "4-BHK + 1",
+          "5-BHK",
           "PLOT AREA : 1500 sqft. (30’ x 50’)",
-          "TOTAL BUILT UP AREA : 3288 sqft.",
+          "TOTAL BUILT UP AREA : 3375 sqft.",
         ],
         imagesArr: [
           {
@@ -466,9 +466,9 @@ export const VillasPages = (type: string) => {
       return {
         name: "WEST FACING VILLA",
         description: [
-          "4-BHK + 1",
+          "5-BHK",
           "PLOT AREA : 2105 sqft. (35’ x 60’)",
-          "TOTAL BUILT UP AREA : 4515 sqft.",
+          "TOTAL BUILT UP AREA : 4583 sqft.",
         ],
         imagesArr: [
           {
@@ -495,9 +495,9 @@ export const VillasPages = (type: string) => {
       return {
         name: "WEST FACING VILLA",
         description: [
-          "4-BHK + 1",
+          "5-BHK",
           "PLOT AREA : 2400 sqft. (40’ x 60’)",
-          "TOTAL BUILT UP AREA : 5285 sqft.",
+          "TOTAL BUILT UP AREA : 5431 sqft.",
         ],
         imagesArr: [
           {

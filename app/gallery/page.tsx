@@ -45,7 +45,7 @@ const Gallary = () => {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>
-        <div className={styles.text}>PROJECT RENDERS</div>
+        <div className={styles.text}>PROJECT GALLERY</div>
         <button
           type="button"
           className={styles.crossBtn}

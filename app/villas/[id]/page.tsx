@@ -53,7 +53,14 @@ const VillasComponent = ({ params }: IVillasProps) => {
       <div className={styles.imagesSection}>
         {values?.imagesArr?.map(({ image, description, width, height }) => (
           <div className={styles.map}>
-            <Image src={image} width={width} height={height} alt="image" />
+            <Image
+              src={image}
+              width={width}
+              height={height}
+              placeholder="blur"
+              alt="image"
+              priority
+            />
             <div className={styles.desc}>
               {description?.map((desc, ind) => (
                 <div key={ind}>{desc}</div>

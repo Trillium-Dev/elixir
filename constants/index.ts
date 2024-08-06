@@ -1,37 +1,36 @@
-// import E1200GF from "assets/images/villas/E1200-GF.png";
-import E1200FF from "assets/images/villas/E1200-FF.png";
-import E1200SF from "assets/images/villas/E1200-SF.png";
-
-import E1500GF from "assets/images/villas/Elixir-east-villa-1500-5.png";
-import E1500FF from "assets/images/villas/Elixir-east-villa-1500-6.png";
-import E1500SF from "assets/images/villas/Elixir-east-villa-1500-7.png";
-
-import E2105GF from "assets/images/villas/E2105-1.png";
-import E2105FF from "assets/images/villas/E2105-2.png";
-import E2105SF from "assets/images/villas/E2105-3.png";
-
-import E2400GF from "assets/images/villas/Elixir-east-villa-2400-5.png";
-import E2400FF from "assets/images/villas/Elixir-east-villa-2400-6.png";
-import E2400SF from "assets/images/villas/Elixir-east-villa-2400-7.png";
-
-import W1200GF from "assets/images/villas/W1200-1.png";
-import W1200FF from "assets/images/villas/W1200-2.png";
-import W1200SF from "assets/images/villas/W1200-3.png";
-
-import W1500GF from "assets/images/villas/W1500-1.png";
-import W1500FF from "assets/images/villas/W1500-2.png";
-import W1500SF from "assets/images/villas/W1500-3.png";
-
-import W2105GF from "assets/images/villas/W2105-1.png";
-import W2105FF from "assets/images/villas/W2105-2.png";
-import W2105SF from "assets/images/villas/W2105-3.png";
-
-import W2400GF from "assets/images/villas/Elixir-west-villa-2400-6.png";
-import W2400FF from "assets/images/villas/Elixir-west-villa-2400-7.png";
-import W2400SF from "assets/images/villas/Elixir-west-villa-2400-8.png";
-
 //east villas floor plan
 import E1200GF from "assets/images/villa/EAST_FACING_2705_GF.png";
+import E1200FF from "assets/images/villa/EAST_FACING_2705_FF.png";
+import E1200SF from "assets/images/villa/EAST_FACING_2705_SF.png";
+
+import E1500GF from "assets/images/villa/EAST_FACING_3376_GF.png";
+import E1500FF from "assets/images/villa/EAST_FACING_3376_FF.png";
+import E1500SF from "assets/images/villa/EAST_FACING_3376_SF.png";
+
+import E2105GF from "assets/images/villa/EAST_FACING_4615_GF.png";
+import E2105FF from "assets/images/villa/EAST_FACING_4615_FF.png";
+import E2105SF from "assets/images/villa/EAST_FACING_4615_SF.png";
+
+import E2400GF from "assets/images/villa/EAST_FACING_5418_GF.png";
+import E2400FF from "assets/images/villa/EAST_FACING_5418_FF.png";
+import E2400SF from "assets/images/villa/EAST_FACING_5418_SF.png";
+
+//west villas floor plan
+import W1200GF from "assets/images/villa/WEST_FACING_2688_GF.png";
+import W1200FF from "assets/images/villa/WEST_FACING_2688_FF.png";
+import W1200SF from "assets/images/villa/WEST_FACING_2688_SF.png";
+
+import W1500GF from "assets/images/villa/WEST_FACING_3375_GF.png";
+import W1500FF from "assets/images/villa/WEST_FACING_3375_FF.png";
+import W1500SF from "assets/images/villa/WEST_FACING_3375_SF.png";
+
+import W2105GF from "assets/images/villa/WEST_FACING_4583_GF.png";
+import W2105FF from "assets/images/villa/WEST_FACING_4583_FF.png";
+import W2105SF from "assets/images/villa/WEST_FACING_4583_SF.png";
+
+import W2400GF from "assets/images/villa/WEST_FACING_5431_GF.png";
+import W2400FF from "assets/images/villa/WEST_FACING_5431_FF.png";
+import W2400SF from "assets/images/villa/WEST_FACING_5431_SF.png";
 
 //east villas
 import EastVillas1 from "assets/images/east-villas/EAST_FACING_2705.png";

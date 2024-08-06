@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./index.module.scss";
 import { VillasPages } from "../../../constants";
 import Link from "next/link";
+import ZoomContainer from "@/components/ZoomContainer";
 
 interface IParams {
   id: string;
@@ -53,7 +54,16 @@ const VillasComponent = ({ params }: IVillasProps) => {
       <div className={styles.imagesSection}>
         {values?.imagesArr?.map(({ image, description, width, height }) => (
           <div className={styles.map}>
-            <Image src={image} width={width} height={height} alt="image" />
+            <ZoomContainer>
+              <Image
+                src={image}
+                width={width}
+                height={height}
+                placeholder="blur"
+                alt="image"
+                priority
+              />
+            </ZoomContainer>
             <div className={styles.desc}>
               {description?.map((desc, ind) => (
                 <div key={ind}>{desc}</div>
